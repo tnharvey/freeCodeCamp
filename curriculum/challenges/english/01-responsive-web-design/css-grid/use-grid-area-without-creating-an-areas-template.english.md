@@ -9,14 +9,18 @@ videoUrl: 'https://scrimba.com/p/pByETK/c6N7VhK'
 <section id='description'>
 The <code>grid-area</code> property you learned in the last challenge can be used in another way. If your grid doesn't have an areas template to reference, you can create an area on the fly for an item to be placed like this:
 <blockquote>item1 { grid-area: 1/1/2/4; }</blockquote>
+
+You can also think of this as x and y coordinates on the grid:
+<blockquote>item1 { grid-area: x1/y1/x2/y2; }</blockquote>
 This is using the line numbers you learned about earlier to define where the area for this item will be. The numbers in the example above represent these values:
-<blockquote>grid-area: horizontal line to start at / vertical line to start at / horizontal line to end at / vertical line to end at;</blockquote>
+<blockquote>grid-area: horizontal line to start at (x1) / vertical line to start at (y1) / horizontal line to end at (x2) / vertical line to end at (y2);</blockquote>
 So the item in the example will consume the rows between lines 1 and 2, and the columns between lines 1 and 4.
+Or, you could say the item starts from the top left at (x,y): 1,1 and ends at 2,4.
 </section>
 
 ## Instructions
 <section id='instructions'>
-Using the <code>grid-area</code> property, place the element with <code>item5</code> class between the third and fourth horizontal lines and between the first and fourth vertical lines.
+Using the <code>grid-area</code> property, place the element with <code>item5</code> class between the third and fourth horizontal lines and between the first and fourth vertical lines. Or, using the coordinate perspective, from (x,y) 3,1 to 4,4.
 </section>
 
 ## Tests
